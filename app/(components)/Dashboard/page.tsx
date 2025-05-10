@@ -21,9 +21,16 @@ import {
   FaToolbox,
 } from "react-icons/fa";
 
+// State for current user and sidebar toggle
+type User = {
+  name: string;
+  // Add other properties if needed
+};
+
 export default function Dashboard() {
-  // State for current user and sidebar toggle
-  const [user, setUser] = useState(null);
+  
+  const [user, setUser] = useState<User | null>(null);
+
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [roleId, setRoleId] = useState(null);
   const [notifications, setNotifications] = useState(3);
