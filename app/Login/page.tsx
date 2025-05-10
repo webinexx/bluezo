@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { FaEye, FaEyeSlash, FaSignInAlt, FaShieldAlt, FaGoogle, FaKey } from 'react-icons/fa';
-import api from '../../api/api';
+import api from '../api/api';
 import { useRouter } from 'next/navigation'; // Changed from next/router to next/navigation
 
 export default function AdminLogin() {
